@@ -2,7 +2,7 @@ name: MiningGas
 version: 1.0.3.0
 author: Celeo
 website: http://www.darktidegames.com/ 
-descriptions: Snowballs do damage to mobs
+descriptions: Mining gas gives random potion effects to the miner
 main: com.darktidegames.celeo.mininggas.MiningGas
 commands:
   mininggas:

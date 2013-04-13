@@ -1,0 +1,10 @@
+settings:
+  time: 30
+effects: 
+  poison: 5
+  slow: 8
+  blindness: 10
+  fatigue: 4
+  haste: 3
+  regeneration: 5
+  harm: 5

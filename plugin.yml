@@ -1,0 +1,10 @@
+name: MiningGas
+version: 1.0.3.0
+author: Celeo
+website: http://www.darktidegames.com/ 
+descriptions: Snowballs do damage to mobs
+main: com.darktidegames.celeo.mininggas.MiningGas
+commands:
+  mininggas:
+    usage: /<command> reload
+    descriptions: Reload from the configuration file

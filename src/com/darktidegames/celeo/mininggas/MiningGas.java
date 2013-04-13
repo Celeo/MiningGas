@@ -98,7 +98,6 @@ public class MiningGas extends JavaPlugin implements Listener
 	{
 		final Player player = event.getPlayer();
 		int draw = new Random().nextInt(101);
-		player.sendMessage("Draw: " + draw);
 		List<PotionEffectType> ret = new ArrayList<PotionEffectType>();
 		for (PotionEffectType effect : effects.keySet())
 			if (draw < effects.get(effect).intValue())
@@ -106,9 +105,6 @@ public class MiningGas extends JavaPlugin implements Listener
 		if (ret.isEmpty())
 			return;
 		PotionEffectType add = ret.get(new Random().nextInt(ret.size()));
-		player.sendMessage("§7Adding potion effect type "
-				+ add.getName().toLowerCase() + " for " + (duration * 20)
-				+ " ticks");
 		PotionEffect fin = add.createEffect(duration * 20
 				* (int) (1 / add.getDurationModifier()), 1);
 		event.getBlock().getWorld().playEffect(event.getBlock().getLocation(), Effect.POTION_BREAK, 2);

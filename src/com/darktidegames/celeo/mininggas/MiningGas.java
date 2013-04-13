@@ -64,11 +64,12 @@ public class MiningGas extends JavaPlugin implements Listener
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
 	{
+		if (args == null || args.length != 1
+				|| !args[0].equalsIgnoreCase("reload"))
+			return false;
 		if (!(sender instanceof Player))
 		{
-			if (args != null && args.length == 1
-					&& args[0].equalsIgnoreCase("reload"))
-				load();
+			load();
 			return true;
 		}
 		Player player = (Player) sender;
